@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="web">
+<div class="barraLateral">
+    <div class="title">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="iconosSuperior">
+        <div>Home</div>
+        <div>Profile</div>
+        <div>Message</div>
+        <div>History</div>
+        <div>Tasks</div>
+        <div>Communities</div>
+    </div>
+    <div class="iconosInferior">
+        <div>Settings</div>
+        <div>Support</div>
+        <div>Privacity</div>
+    </div>
+</div>
+
+<div class="contenido">
+    <div class="parteSuperior">
+    <div class="search">
+        <div class="searchbar"></div>
+        <div class="userName"></div>
+        <div class="iconuser"></div>
+        <div class="campanita"></div>
+     
+    </div>
+    <div class="navegacion">
+        <div class="user">
+            <div class="userImg"></div>
+            <div class="userText">
+                <div class="userTextPresentation"></div>
+                <div class="userTextName"></div>
+            </div>
+        </div>
+        <div class="button">New</div>
+        <div class="button">Upload</div>
+        <div class="button">Share</div>
+    </div></div>
+    <div class="cuadricula">
+      <div class="cuadriculaIzquieda">
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Super Cool Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. D
+                eserunt architecto tempora voluptate 
+                incidunt quaerat velit officia quae hic voluptatibus quisquam. Facere, beatae?</p>
+        </div>
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Less Cool Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. D
+                eserunt architecto tempora voluptate 
+                incidunt quaerat velit officia quae hic voluptatibus quisquam. Facere, beatae?</p>
+        </div>
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Imposible APP</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. D
+                eserunt architecto tempora voluptate 
+                incidunt quaerat velit officia quae hic voluptatibus quisquam. Facere, beatae?</p>
+        </div>
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Easy peasy App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. D
+                eserunt architecto tempora voluptate 
+                incidunt quaerat velit officia quae hic voluptatibus quisquam. Facere, beatae?</p>
+        </div>
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Ad bloker</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. 
+                </p>
+        </div>
+        <div class="cuadriculaIzquierdaInterior">
+            <h3>Money Maker</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos repellendus vitae molestias temporibus! 
+                Earum, accusantium recusandae. D
+                eserunt architecto tempora voluptate 
+                incidunt quaerat velit officia quae hic voluptatibus quisquam. Facere, beatae?</p>
+        </div>
+      </div>
+      <div class="cuadruculaDerecha">
+        <div class="cuadriculaDerechaInteriorSuperior">
+            <div>
+                <h3>Site Maintenance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eos repellendus vitae molestias temporibus! 
+                  </p>
+            </div>
+            <div>
+                <h3>Community Share Day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eos repellendus vitae molestias temporibus! 
+                  </p>
+            </div>
+           
+            <div>
+                <h3>Updated Privacy Policy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eos repellendus vitae molestias temporibus! 
+                  </p>
+            </div>
+        </div>
+        <div class="cuadriculaDerechaInteriorInferior">
+            <div>@tegan</div>
+            <div>@morgan</div>
+            <div>@kendall</div>
+            <div>@alex</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+</div>
+    
+</body>
+</html>
+
+<style>
+:root{
+    --background-color: #e5e5e5;
+    --primary-color: #1d4ed8;
+    --secondary-color: white;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --border-left: 10px solid orange;
+}
+.web{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-auto-rows: 100%;
+}
+.search{
+    background-color: azure;
+    display: grid;
+    grid-template-areas: 'searchbar searchbar searchbar searchbar  campanita iconuser userName ';
+}
+.search >div{
+    border: 1px solid black;
+}
+.cuadricula{
+ 
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100%;
+
+}
+
+.barraLateral{
+    color: var(--secondary-color);
+    display: grid;
+    background-color: var(--primary-color);
+    grid-template-rows: 100px 200px 500px;
+    
+}
+.contenido{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    background-color: blue;
+}
+body, html, .web{
+    height: 100%;
+    background-color: green;
+    font-family: 'Roboto'; 
+    padding: 0px;
+    margin: 0px;
+}
+.navegacion{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: aqua;
+}
+.cuadricula{
+    background-color: var(--background-color);
+    height: 100%;
+}
+.cuadriculaIzquieda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    grid-auto-rows: auto;
+    background-color: var(--background-color);
+}
+.cuadriculaIzquieda >div{
+    box-sizing: content-box;
+    border-left: var(--border-left);
+    background-color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    margin: 1vh;
+    border-radius: var(--border-radius);
+    box-sizing: border-box
+}
+.cuadruculaDerecha{
+    display: grid;
+    
+   
+}
+.cuadruculaDerecha >div{
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+}
+
+.cuadriculaDerechaInteriorSuperior{
+    padding: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.cuadriculaDerechaInteriorSuperior >div{
+  
+    background-color: var(--secondary-color);
+   
+}
+.cuadriculaDerechaInteriorInferior{
+    padding: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.cuadriculaDerechaInteriorInferior >div{
+   
+    
+}
+
+.navegacion >div{
+    border: 1px black solid;
+}
+.user{
+    background-color: bisque;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.userImg{
+    background-color: darkgray;
+    border: 1px black solid;
+}
+.userText{
+    background-color: slateblue;
+    border: 1px black solid;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.userTextName{
+    border: 1px black solid;
+}
+
+.userTextPresentation{
+    
+}
+.parteSuperior{
+    display: grid;
+}
+.searchbar{
+    grid-area: searchbar;
+    background-color: yellow;
+}
+.userName{
+    grid-area: userName;
+    background-color: green;
+}
+
+.campanita{
+    grid-area: campanita;
+    background-color: black;
+}
+.iconuser{
+    grid-area: iconuser;
+    background-color: azure;
+}
+</style>

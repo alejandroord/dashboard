@@ -1,0 +1,242 @@
+:root {
+  --background-color: #e5e5e5;
+  --primary-color: #1d4ed8;
+  --secondary-color: white;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --border-left: 10px solid orange;
+  --terciary_color: #cddde4;
+}
+.web {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-auto-rows: 100%;
+}
+.search {
+  background-color: white;
+  display: grid;
+  grid-template-areas: "searchbar searchbar searchbar searchbar userName userName ";
+}
+.searchbar {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+.search i {
+  font-size: 30px;
+}
+.iconosSuperior i,
+.iconosInferior i,
+.title {
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+}
+.cuadricula {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 100%;
+}
+
+.barraLateral {
+  padding-left: 20px;
+  color: var(--secondary-color);
+  display: grid;
+  background-color: var(--primary-color);
+  grid-template-rows: 100px 200px 500px;
+}
+
+.contenido {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+.button {
+  display: flex;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  align-items: center;
+  height: 40px;
+  color: white;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  justify-content: center;
+}
+body,
+html,
+.web {
+  height: 100%;
+
+  font-family: "Roboto";
+  padding: 0px;
+  margin: 0px;
+}
+.navegacion {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.cuadricula {
+  background-color: var(--background-color);
+  height: 100%;
+}
+.cuadriculaIzquieda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-auto-rows: auto;
+  background-color: var(--background-color);
+}
+.cuadriculaIzquieda > div {
+  padding: 10px;
+  padding-left: 15px;
+  box-sizing: content-box;
+  border-left: var(--border-left);
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  margin: 1vh;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+.cuadruculaDerecha {
+  display: grid;
+  grid-template-rows: 50px auto 50px auto;
+}
+.cuadruculaDerecha > div {
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  margin: 20px;
+}
+.cuadricula h2 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.cuadriculaDerechaInteriorSuperior {
+  padding: 1vh;
+  display: grid;
+  grid-template-rows: 1fr 10px 1fr 10px 1fr;
+}
+.cuadriculaDerechaInteriorSuperior > div {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--secondary-color);
+}
+.cuadriculaDerechaInteriorInferior {
+  padding: 1vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.cuadriculaDerechaInteriorInferior > div {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  padding-left: 20px;
+}
+.cuadriculaDerechaInteriorInferior img {
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.navegacion > div {
+}
+.user {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 120px 1fr;
+}
+
+.userImg {
+  align-items: center;
+  margin-left: auto;
+}
+.userImg img {
+  width: 85px;
+  border-radius: 80px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.userText {
+  padding-top: 0px;
+  align-items: center;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.userTextName h2 {
+  margin-top: 0px;
+}
+
+.userTextPresentation {
+}
+.parteSuperior {
+  display: grid;
+  margin-right: 30px;
+}
+.searchbar {
+  grid-area: searchbar;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.searchbar i {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+  align-items: center;
+}
+.searchbar div {
+  background-color: black;
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+.searchbar input {
+  background-color: var(--terciary_color);
+  border-radius: 30px;
+  text-decoration: none;
+  border: 0px;
+  height: 30px;
+  width: 90%;
+  text-align: center;
+}
+.userName {
+  grid-area: userName;
+  justify-content: end;
+
+  display: grid !important;
+  grid-template-columns: 1fr 70px auto;
+  align-content: center;
+}
+.userName img {
+  width: 60px;
+  border-radius: 50px;
+}
+.userName div {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  align-items: center;
+}
+.userName i {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding-right: 20px;
+}
+.campanita {
+  grid-area: campanita;
+}
+.iconuser {
+  grid-area: iconuser;
+  background-color: azure;
+}
+
+.cuadriculaIzquierdaInterior i {
+  float: right;
+  padding-right: 5px;
+  bottom: 0;
+}
